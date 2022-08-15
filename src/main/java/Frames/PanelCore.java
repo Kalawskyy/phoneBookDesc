@@ -8,11 +8,12 @@ public class PanelCore {
     Container panelCotainer;
     PanelCore(){
         panel= new JPanel();
-        panel.setVisible(true);
+
         panel.setBounds(500,500,500,500);
-        panel.setVisible(true);
         panelCotainer = new Container();
         panel.add(panelCotainer);
+        panel.setVisible(true);
+
     }
     PanelCore(int sizeX,int sizeY,int positionX,int positionY){
         panel= new JPanel();
@@ -23,10 +24,11 @@ public class PanelCore {
         panel.add(panelCotainer);
     }
 
-    JButton createButton(int sizeX,int sizeY,int positionX,int positionY,String buttonName){
+    JButton createButton(int sizeX,int sizeY,int positionX,int positionY,String buttonName,boolean visible){
         JButton button= new JButton(buttonName);
         button.setSize(sizeX,sizeY);
         button.setLocation(positionX,positionY);
+        button.setVisible(visible);
         return button;
     }
 }
