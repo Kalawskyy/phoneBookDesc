@@ -1,4 +1,5 @@
 package Frames;
 
-public class MainFrame {
+public class MainFrame extends FrameCore{
+
 }
