@@ -5,9 +5,9 @@ import javax.swing.*;
 public class MainFrame extends FrameCore{
 MainFrame(){
     super();
-    mainFrame.add(frameContainer);
-    mainFrame.getContentPane();
+    mainFrame.getContentPane().add(frameContainer);
     MenuPanel menu = new MenuPanel();
-    frameContainer.add(menu.panel);
+    mainFrame.add(menu.panel);
+    menu.addButton();
 }
 }

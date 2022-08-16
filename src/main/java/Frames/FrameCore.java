@@ -10,7 +10,9 @@ public class FrameCore{
    protected JFrame mainFrame= new JFrame();
     protected Dimension dim = new Dimension(0,0);
         FrameCore(){
+            mainFrame.add(frameContainer);
             mainFrame.setBounds(500,500,400,400);
+            mainFrame.getContentPane();
             mainFrame.setVisible(true);
             mainFrame.setDefaultCloseOperation(3);
         }
