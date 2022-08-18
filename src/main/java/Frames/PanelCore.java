@@ -18,13 +18,11 @@ public class PanelCore {
     }
     PanelCore(int sizeX,int sizeY,int positionX,int positionY){
         panel= new JPanel();
+        panel.setLayout(null);
         panel.setVisible(true);
-        panel.setBackground(Color.BLUE);
-        panel.setBounds(sizeX,sizeY,positionX,positionY);
+        panel.setBounds(positionX,positionY,sizeX,sizeY);
         panel.setVisible(true);
-        panelCotainer = new Container();
-        panel.add(panelCotainer);
-       // panelCotainer.
+
     }
 
     JButton createButton(int sizeX,int sizeY,int positionX,int positionY,String buttonName,boolean visible){
