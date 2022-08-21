@@ -10,15 +10,12 @@ public class PanelCore {
         panel= new JPanel();
         panel.setBackground(Color.BLUE);
         panel.setBounds(500,500,500,500);
-        panelCotainer = new Container();
-        panel.add(panelCotainer);
-        panelCotainer.setVisible(true);
         panel.setVisible(true);
 
     }
-    PanelCore(int sizeX,int sizeY,int positionX,int positionY){
+    PanelCore(int sizeX,int sizeY,int positionX,int positionY,LayoutManager layout){
         panel= new JPanel();
-        panel.setLayout(null);
+        panel.setLayout(layout);
         panel.setVisible(true);
         panel.setBounds(positionX,positionY,sizeX,sizeY);
         panel.setVisible(true);
